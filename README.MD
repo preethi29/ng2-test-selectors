@@ -1,6 +1,12 @@
 # ng2-test-selectors
-Angular2 library to add selectors to any element  to facilitate quering elements in unit-testing or functional testing. The selectors are added only in development mode. 
-Calling 'enableProdMode()' removes the selectors.
+Angular2 library to add selectors to any element  to facilitate quering elements in unit-tests or e2e-tests. 
+
+The selectors are added only in development mode. 
+Calling 'enableProdMode()' removes the selectors from the elements.
+
+The library provides two directives:
+ * **testId** - adds id to the element in development mode
+ * **testClass** - adds class to the element in development mode
 
 ## Installation
 
@@ -10,15 +16,9 @@ To install this library, run:
 $ npm install ng2-test-selectors --save
 ```
 
-## Consuming your library
+## Usage
 
-Once you have published your library to npm, you can import your library in any Angular application by running:
-
-```bash
-$ npm install ng2-test-selectors
-```
-
-and then from your Angular `AppModule`:
+Import '**Ng2TestSelectorsModule**' in your application's `AppModule`:
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -45,14 +45,30 @@ import { Ng2TestSelectorsModule } from 'ng2-test-selectors';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Once the module is imported, you can use the directives in your Angular application:
 
+* testId
 ```xml
 <!-- You can now use 'testId' directive in any component -->
 <h1 testId="test-title">
-  {{title}}
+    My Application
 </h1>
 ```
+The above template will be rendered in development mode as below:
+
+![testId](/testId.jpg)
+
+
+* testClass
+```xml
+<!-- You can now use 'testclass' directive in any component -->
+<h1 testClass="test-title">
+    My Application
+</h1>
+```
+The above template will be rendered in development mode as below:
+
+![testClass](/testClass.jpg)
 
 ## Development
 
