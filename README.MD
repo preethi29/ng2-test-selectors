@@ -36,7 +36,7 @@ import { Ng2TestSelectorsModule } from 'ng2-test-selectors';
   imports: [
     BrowserModule,
 
-    // Specify your library as an import
+    // Specify Ng2TestSelectorsModule from library as an import
     Ng2TestSelectorsModule
   ],
   providers: [],
@@ -48,7 +48,7 @@ export class AppModule { }
 Once your library is imported, you can use its components, directives and pipes in your Angular application:
 
 ```xml
-<!-- You can now use your library directive in any component -->
+<!-- You can now use 'testId' directive in any component -->
 <h1 testId="test-title">
   {{title}}
 </h1>
