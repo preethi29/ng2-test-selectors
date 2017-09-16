@@ -50,7 +50,7 @@ Once the module is imported, you can use the directives in your Angular applicat
 * **testId**
 ```xml
 <!-- You can now use 'testId' directive in any component -->
-<h1 testId="test-title">
+<h1 testId="app-title">
     My Application
 </h1>
 ```
@@ -62,7 +62,7 @@ The above template will be rendered in development mode as below:
 * **testClass**
 ```xml
 <!-- You can now use 'testclass' directive in any component -->
-<h1 testClass="test-title">
+<h1 testClass="app-title">
     My Application
 </h1>
 ```
