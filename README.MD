@@ -47,7 +47,7 @@ export class AppModule { }
 
 Once the module is imported, you can use the directives in your Angular application:
 
-* testId
+* **testId**
 ```xml
 <!-- You can now use 'testId' directive in any component -->
 <h1 testId="test-title">
@@ -59,7 +59,7 @@ The above template will be rendered in development mode as below:
 ![testId](/testId.jpg)
 
 
-* testClass
+* **testClass**
 ```xml
 <!-- You can now use 'testclass' directive in any component -->
 <h1 testClass="test-title">
